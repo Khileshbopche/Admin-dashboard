@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tasks-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 0 20px;
+    color: #888;
+}
+
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tasks-table th,
+.tasks-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.tasks-table th {
+    background-color: #f9f9f9;
+}
+
+.team-members img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.priority {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.priority.high {
+   
+    color: #6a67ce;
+}
+
+.priority.normal {
+    
+    color: #ffa500;
+}
+
+.priority.low {
+    
+    color: #ff6666;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.status.completed {
+    background-color: #e6f7e6;
+    border-radius: 200px;
+    color: #33cc33;
+}
+
+.status.pending {
+    background-color: #fff6e5;
+    color: #ffa500;
+    border-radius: 200px;
+}
+
+.status.rejected {
+    background-color: #ffe6e6;
+    border-radius: 200px;
+    color: #ff6666;
+}
+
+@media (max-width: 768px) {
+    .tasks-container {
+        padding: 10px;
+    }
+
+    .team-members img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+</style>
+<body>
+    <div class="tasks-container">
+        <h2>TASKS</h2>
+        <p>A task is accomplished by a set deadline, and must contribute toward work-related objectives.</p>
+        <table class="tasks-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Team</th>
+                    <th>Open Task</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Evaluating the design</td>
+                    <td class="team-members">
+                        <img src="images/1.jpg" alt="Member 1">
+                        <img src="images/8.jpg" alt="Member 2">
+                        <img src="images/5.jpg" alt="Member 3">
+                        <img src="images/8.jpg" alt="Member 4">
+                    </td>
+                    <td>37</td>
+                    <td class="priority high">High</td>
+                    <td class="status completed">Completed</td>
+                </tr>
+                <tr>
+                    <td>Generate ideas for design</td>
+                    <td class="team-members">
+                        <img src="images/1.jpg" alt="Member 5">
+                        <img src="images/5.jpg" alt="Member 6">
+                        <img src="images/7.jpg" alt="Member 7">
+                        <img src="images/1.jpg" alt="Member 8">
+                    </td>
+                    <td>37</td>
+                    <td class="priority normal">Normal</td>
+                    <td class="status pending">Pending</td>
+                </tr>
+                <tr>
+                    <td>Define the problem</td>
+                    <td class="team-members">
+                        <img src="images/1.jpg" alt="Member 1">
+                        <img src="images/8.jpg" alt="Member 2">
+                        <img src="images/5.jpg" alt="Member 3">
+                        <img src="images/8.jpg" alt="Member 4">
+                      
+                    </td>
+                    <td>37</td>
+                    <td class="priority low">Low</td>
+                    <td class="status completed">Completed</td>
+                </tr>
+                <tr>
+                    <td>Empathize with users</td>
+                    <td class="team-members">
+                        <img src="images/1.jpg" alt="Member 5">
+                        <img src="images/5.jpg" alt="Member 6">
+                        <img src="images/7.jpg" alt="Member 7">
+                        <img src="images/1.jpg" alt="Member 8">
+                    </td>
+                    <td>37</td>
+                    <td class="priority high">High</td>
+                    <td class="status rejected">Rejected</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

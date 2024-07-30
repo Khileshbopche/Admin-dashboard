@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ongoing-projects {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 0 20px;
+    color: #888;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-members img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.more-options {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.project-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.project-name {
+    font-weight: bold;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.progress-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(#adaddd 0% 75%, #eee 75% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    font-size: 0.8em;
+    color: #6a67ce;
+}
+
+@media (max-width: 768px) {
+    .ongoing-projects {
+        padding: 10px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    .project-header .team-members img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .project-details .progress-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .progress-text {
+        font-size: 0.7em;
+    }
+}
+
+
+
+</style>
+<body>
+    <div class="ongoing-projects">
+        <h2>Ongoing Projects</h2>
+        <p>Projects where development work is on completion</p>
+        <div class="project">
+            <div class="project-header">
+                <div class="team-members">
+                    <img src="images/1.jpg" alt="Member 1">
+                    <img src="images/4.jpg" alt="Member 2">
+                    <img src="images/6.jpg" alt="Member 3">
+                    <img src="images/8.jpg" alt="Member 4">
+                </div>
+                <span class="team-name">Design team</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="project-details">
+                <p class="date">25 August 2020</p>
+                <p class="project-name">Mobile app design</p>
+                <div class="progress-circle">
+                    <span class="progress-text">75%</span>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+                <div class="team-members">
+                    <img src="images/8.jpg" alt="Member 1">
+                    <img src="images/6.jpg" alt="Member 2">
+                    <img src="images/7.jpg" alt="Member 3">
+                    <img src="images/1.jpg" alt="Member 4">
+                </div>
+                <span class="team-name">Design team</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="project-details">
+                <p class="date">12 June 2020</p>
+                <p class="project-name">Website Redesign</p>
+                <div class="progress-circle">
+                    <span class="progress-text">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

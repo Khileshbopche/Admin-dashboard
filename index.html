@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Icons</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+
+<body style=" background-color: #eaeaff;">
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo-light.png" alt="Logo">
+        </div>
+        <div class="nav-toggle">
+            <button class="toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#dashboards" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboards</a>
+                <ul class="dropdown">
+                    <li><a href="#general"><i class="fas fa-cogs"></i> General</a></li>
+                    <li><a href="#advanced-ui"><i class="fas fa-puzzle-piece"></i> Advanced UI</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#widgets" class="nav-link"><i class="fas fa-th"></i> Application </a>
+            </li>
+            <li class="nav-item">
+                <a href="#components" class="nav-link"><i class="fas fa-cube"></i> Components</a>
+                <ul class="dropdown">
+                    <li><a href="#elements"><i class="fas fa-box"></i> Elements</a></li>
+                    <li><a href="#forms"><i class="fas fa-edit"></i> Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#maps-charts" class="nav-link"><i class="fas fa-map"></i> Maps&Charts</a>
+                <ul class="dropdown">
+                    <li><a href="#maps"><i class="fas fa-map-marker-alt"></i> Maps</a></li>
+                    <li><a href="#charts"><i class="fas fa-chart-line"></i> Charts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#pages" class="nav-link"><i class="fas fa-file"></i> Pages</a>
+            </li>
+           
+            <li class="nav-item">
+                <a href="#authentication" class="nav-link"><i class="fas fa-user-lock"></i> Authentication</a>
+            </li>
+        </ul>
+        <div class="left">
+            <select>
+                <option value="IT Projects">IT Projects</option>
+                <option value="Business Case">Business Case</option>
+                <option value="Microsoft Project">Microsoft Project</option>
+                <option value="Risk Management">Risk Management</option>
+                <option value="Team Building">Team Building</option>
+            </select>
+        </div>
+        <div class="nav-extras">
+            <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-cogs"></i></a>
+          
+            <a href="#" class="nav-icon"><i class="fas fa-globe"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-bell"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+    
+    <aside class="sidebar">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <ul class="sidebar-links">
+            <li class="nav-item">
+                <a href="#dashboards" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboards</a>
+                <ul class="dropdown">
+                    <li><a href="#general"><i class="fas fa-cogs"></i> General</a></li>
+                    <li><a href="#advanced-ui"><i class="fas fa-puzzle-piece"></i> Advanced UI</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#widgets" class="nav-link"><i class="fas fa-th"></i> Widgets</a>
+            </li>
+            <li class="nav-item">
+                <a href="#components" class="nav-link"><i class="fas fa-cube"></i> Components</a>
+                <ul class="dropdown">
+                    <li><a href="#elements"><i class="fas fa-box"></i> Elements</a></li>
+                    <li><a href="#forms"><i class="fas fa-edit"></i> Forms</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#maps-charts" class="nav-link"><i class="fas fa-map"></i> Maps & Charts</a>
+                <ul class="dropdown">
+                    <li><a href="#maps"><i class="fas fa-map-marker-alt"></i> Maps</a></li>
+                    <li><a href="#charts"><i class="fas fa-chart-line"></i> Charts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#pages" class="nav-link"><i class="fas fa-file"></i> Pages</a>
+            </li>
+            <li class="nav-item">
+                <a href="#icons" class="nav-link"><i class="fas fa-icons"></i> Icons</a>
+            </li>
+            <li class="nav-item">
+                <a href="#authentication" class="nav-link"><i class="fas fa-user-lock"></i> Authentication</a>
+            </li>
+            
+            
+        </ul>
+       
+    </aside>
+    
+</header>
+<!-- second section  -->
+<div class="container">
+    <div class="header">
+        <div class="breadcrumb">
+            <h1>Welcome To Dashboard</h1>
+            <nav>
+                <a href="#">Home</a> / <span>Dashboard</span>
+            </nav>
+        </div>
+        <div class="actions">
+            <button class="btn import"><i class="fas fa-download"></i> Import</button>
+            <button class="btn filter"><i class="fas fa-filter"></i> Filter</button>
+            <button class="btn download-report"><i class="fas fa-download"></i> Download Report</button>
+        </div>
+    </div>
+<br>
+
+<!-- third section -->
+
+
+<div class="info-card">
+    <div class="info-image">
+        <img src="images/work3.png" alt="Illustration">
+    </div>
+    <div class="info-text">
+        <h2>Sonia Taylor!</h2>
+        <p>You have two projects to finish, you had completed <span class="highlight">57%</span> from your level, Keep going to your level</p>
+    </div>
+</div>
+<br>
+<!--  forth  -->
+
+<div class="contain">
+    <div class="card">
+        <h2>Total Revenue</h2>
+        <p class="amount">$5,900.00</p>
+        <p class="percentage higher">55% Higher</p>
+    </div>
+    <div class="card">
+        <h2>New Employees</h2>
+        <p class="amount">15</p>
+        <p class="percentage increased">5% Increased</p>
+    </div>
+    <div class="card">
+        <h2>Total Expenses</h2>
+        <p class="amount">$8,500</p>
+        <p class="percentage lower">12% Decrease</p>
+    </div>
+  </div>
+  
+
+ <!-- five section  -->
+
+<div class="transaction-card">
+  <h2>Recent Transactions</h2>
+  <div class="transaction">
+      <img src="images/4.jpg" alt="User">
+      <div class="info">
+          <p class="name">Flicker</p>
+          <p class="details">App improvement</p>
+          <p class="details">12 Jan 2020</p>
+      </div>
+      <div class="amount">
+          <span class="up">$45.234</span>
+      </div>
+  </div>
+  <div class="transaction">
+      <img src="images/5.jpg" alt="User">
+      <div class="info">
+          <p class="name">Intoxica</p>
+          <p class="details">Milestone</p>
+          <p class="details">23 Jan 2020</p>
+      </div>
+      <div class="amount">
+          <span class="down">$23.452</span>
+      </div>
+  </div>
+  <div class="transaction">
+      <img src="images/6.jpg" alt="User">
+      <div class="info">
+          <p class="name">Digiwatt</p>
+          <p class="details">Sales executive</p>
+          <p class="details">4 Apr 2020</p>
+      </div>
+      <div class="amount">
+          <span class="down">$78.001</span>
+      </div>
+  </div>
+  <div class="transaction">
+      <img src="images/7.jpg" alt="User">
+      <div class="info">
+          <p class="name">Flicker</p>
+          <p class="details">Milestone2</p>
+          <p class="details">4 Apr 2020</p>
+      </div>
+      <div class="amount">
+          <span class="up">$37.285</span>
+      </div>
+  </div>
+  <div class="transaction">
+      <img src="images/8.jpg" alt="User">
+      <div class="info">
+          <p class="name">Flicker</p>
+          <p class="details">App improvement</p>
+          <p class="details">4 Apr 2020</p>
+      </div>
+      <div class="amount">
+          <span class="down">$25.341</span>
+      </div>
+  </div>
+  </div>
+  </div>
+<!-- six second  -->
+<div class="con">
+  <div class="chart-con">
+      <canvas id="projectBudgetChart"></canvas>
+  </div>
+</div>
+
+
+<!--  seven section  -->
+<div class="countdown">
+    <div class="text">
+        <h1>PROJECT LAUNCH</h1>
+        <p>the project is going to launch</p>
+        <div class="time" id="time">145 days</div>
+        <p>12 Monday, Oct 2020</p>
+    </div>
+    <img src="images/work.png" alt="Rocket Icon">
+</div>
+
+<!--  eight 8 section  -->
+<div class="dashboard">
+    <div class="today-tasks">
+        <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Today Tasks</h2>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">UX UI & Backend Development</p>
+        <div class="project-budget">
+            <p> Project-Budget-</p>
+            <span class="budget-amount">$5,240</span>
+            <div class="progress-circle">
+                <span>75%</span>
+            </div>
+            <br>
+
+            
+        </div>
+        <p>May 28 - June 01 (2018)</p>
+    </div>
+    <div class="top-inquiries">
+        <h2>Top Inquiries</h2>
+        <p>project work involves a group of students investigating.</p>
+        <div class="inquiry">
+            <span>Brand identity</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 24.75%;"></div>
+            </div>
+            <span class="percentage">24.75%</span>
+        </div>
+        <div class="inquiry">
+            <span>UI & UX design</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 12.34%;"></div>
+            </div>
+            <span class="percentage">12.34%</span>
+        </div>
+        <div class="inquiry">
+            <span>Product design</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 12.75%;"></div>
+            </div>
+            <span class="percentage">12.75%</span>
+        </div>
+    </div>
+</div>
+
+<!--  9th section  -->
+<div class="tasks-container">
+    <h2>TASKS</h2>
+    <p>A task is accomplished by a set deadline, and must contribute toward work-related objectives.</p>
+    <table class="tasks-table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Team</th>
+                <th>Open Task</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Evaluating the design</td>
+                <td class="team-members">
+                    <img src="images/1.jpg" alt="Member 1">
+                    <img src="images/8.jpg" alt="Member 2">
+                    <img src="images/5.jpg" alt="Member 3">
+                    <img src="images/8.jpg" alt="Member 4">
+                </td>
+                <td>37</td>
+                <td class="priority high">High</td>
+                <td> <button class="status completed">Completed </button></td>
+            </tr>
+            <tr>
+                <td>Generate ideas for design</td>
+                <td class="team-members">
+                    <img src="images/1.jpg" alt="Member 5">
+                    <img src="images/5.jpg" alt="Member 6">
+                    <img src="images/7.jpg" alt="Member 7">
+                    <img src="images/1.jpg" alt="Member 8">
+                </td>
+                <td>37</td>
+                <td class="priority normal">Normal</td>
+                <!-- <td class="status pending">Pending</td> -->
+                 <td>
+                 <button class="status pending">  Pending </button> </td>
+            </tr>
+            <tr>
+                <td>Define the problem</td>
+                <td class="team-members">
+                    <img src="images/1.jpg" alt="Member 1">
+                    <img src="images/8.jpg" alt="Member 2">
+                    <img src="images/5.jpg" alt="Member 3">
+                    <img src="images/8.jpg" alt="Member 4">
+                  
+                </td>
+                <td>37</td>
+                <td class="priority low">Low</td>
+                <td> <button class="status completed">Completed   </button> </td>
+            </tr>
+            <tr>
+                <td>Empathize with users</td>
+                <td class="team-members">
+                    <img src="images/1.jpg" alt="Member 5">
+                    <img src="images/5.jpg" alt="Member 6">
+                    <img src="images/7.jpg" alt="Member 7">
+                    <img src="images/1.jpg" alt="Member 8">
+                </td>
+                <td>37</td>
+                <td class="priority high">High</td>
+                <td> <button class="status rejected">Rejected    </button>  </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 10 th Section -->
+<div class="ongoing-projects">
+    <h2>Ongoing Projects</h2>
+    <p>Projects where development work is on completion</p>
+    <div class="project">
+        <div class="project-header">
+            <div class="team-members">
+                <img src="images/1.jpg" alt="Member 1">
+                <img src="images/4.jpg" alt="Member 2">
+                <img src="images/6.jpg" alt="Member 3">
+                <img src="images/8.jpg" alt="Member 4">
+            </div>
+            <span class="team-name">Design team</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="project-details">
+            <p class="date">25 August 2020</p>
+            <p class="project-name">Mobile app design</p>
+            <div class="progress-circle">
+                <span class="progress-text">75%</span>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-header">
+            <div class="team-members">
+                <img src="images/8.jpg" alt="Member 1">
+                <img src="images/6.jpg" alt="Member 2">
+                <img src="images/7.jpg" alt="Member 3">
+                <img src="images/1.jpg" alt="Member 4">
+            </div>
+            <span class="team-name">Design team</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="project-details">
+            <p class="date">12 June 2020</p>
+            <p class="project-name">Website Redesign</p>
+            <div class="progress-circle">
+                <span class="progress-text">50%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 11th section  -->
+
+<div class="project-card">
+    <h3>Website Design <span class="status">Running</span></h3>
+    <p>Task completed: 7/10</p>
+    <div class="progress-bars">
+        <div class="bar" style="height: 50%;"></div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar" style="height: 85%;"></div>
+        <div class="bar" style="height: 30%;"></div>
+        <div class="bar" style="height: 30%;"></div>
+        <div class="bar" style="height: 30%;"></div>
+    </div>
+    <div class="project-details">
+        <p>Client: <strong>John Deo</strong></p>
+        <p>Deadline: <span>25 Dec 2020</span></p>
+        <div class="project-logo">
+            <img src="images/project-logo.png" alt="Project Logo">
+        </div>
+    </div>
+</div>
+
+
+<!-- footer  -->
+<footer class="footer">
+    
+    <div class="footer-bottom">
+        <p class="para">Copyright © 2024 Spruha. Designed by Spruko All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+    <script src="script.js">
+
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</body>
+</html>
